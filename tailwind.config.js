@@ -80,7 +80,7 @@ export const theme = {
       },
       grow: {
         to: {
-          width: "40%",
+          height: "146mm",
         },
       },
     },

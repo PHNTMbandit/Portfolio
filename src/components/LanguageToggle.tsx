@@ -9,6 +9,7 @@ import {
 import { Globe } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
+import { UilGlobe } from "@iconscout/react-unicons";
 
 const locales: Record<string, { title: string }> = {
   en: { title: "English" },
@@ -26,7 +27,7 @@ const LanguageToggle = () => {
           <Button
             variant="outline"
             size="icon">
-            <Globe className="h-[1.2rem] w-[1.2rem]" />
+            <UilGlobe />
             <span className="sr-only">Toggle language</span>
           </Button>
         </DropdownMenuTrigger>

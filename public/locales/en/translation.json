@@ -6,6 +6,15 @@
     "role1": "Software Engineer",
     "role2": "Front-End Developer",
     "role3": "Game Designer",
-    "role4": "Programmer"
+    "role4": "Programmer",
+    "candlelightTitle": "Candlelight",
+    "candlelightDescription": "Full-Stack Productivity Solution",
+    "candlelightContent": "Developed a robust full-stack project centered around user authentication, seamlessly securing user accounts. The platform efficiently loads and manages user-created notes and tasks, providing a streamlined and secure experience for users.",
+    "projectMVCTitle": "Project MVC",
+    "projectMVCDescription": "3D Shooter Game",
+    "projectMVCContent": "Immerse yourself in a dynamic battlefield where waves of enemies relentlessly challenge your skills. The game features a sophisticated enemy wave spawner system that keeps players on their toes, ensuring an ever-intensifying experience.",
+    "projectLuminaTitle": "Project Lumina",
+    "projectLuminaDescription": "2D Action Platformer",
+    "projectLuminaContent": "Embark on a relentless journey through the ever-changing landscapes of Lumina, a dynamic roguelite adventure that challenges players with procedurally generated levels and an extensible character controller."
   }
 }
