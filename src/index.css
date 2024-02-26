@@ -55,6 +55,10 @@
   @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
 }
 
+.h2-extrabold {
+  @apply scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-3xl;
+}
+
 @layer base {
   * {
     @apply font-inter border-border;

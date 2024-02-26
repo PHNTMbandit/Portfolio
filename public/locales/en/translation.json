@@ -1,5 +1,11 @@
 {
   "main": {
-    "header": "Domenic Pittari"
+    "greeting": "Hello",
+    "name": "I'm Domenic Pittari",
+    "rolePrefix": "I'm a ",
+    "role1": "Software Engineer",
+    "role2": "Front-End Developer",
+    "role3": "Game Designer",
+    "role4": "Programmer"
   }
 }

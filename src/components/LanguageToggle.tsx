@@ -36,6 +36,7 @@ const LanguageToggle = () => {
             onValueChange={setPosition}>
             {Object.keys(locales).map((locale) => (
               <DropdownMenuRadioItem
+                key={locale}
                 value={locale}
                 onClick={() => i18n.changeLanguage(locale)}>
                 {locales[locale].title}
