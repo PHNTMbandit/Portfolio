@@ -35,7 +35,7 @@ const Home = () => {
           className="border-4 border-primary place-self-center opacity-0 rounded-full object-cover size-52 animate-slidein [--slidein-delay:200ms] "
           src="./assets/images/Profile-Picture.png"
         />
-        <div className="flex gap-4 opacity-0 place-self-center animate-slidein [--slidein-delay:300ms]">
+        <div className="flex gap-4 opacity-0 place-self-center animate-slidein [--slidein-delay:400ms]">
           <a
             href="https://github.com/PHNTMbandit"
             target="_blank">
@@ -58,13 +58,13 @@ const Home = () => {
           </a>
         </div>
         <div className="flex flex-col justify-start items-start space-y-3">
-          <h1 className="h1-extrabold opacity-0 animate-slidein [--slidein-delay:400ms]">
+          <h1 className="h1-extrabold opacity-0 animate-slidein [--slidein-delay:600ms]">
             {t("main.greeting")}
           </h1>
-          <h1 className="h1-extrabold opacity-0 animate-slidein [--slidein-delay:600ms]">
+          <h1 className="h1-extrabold opacity-0 animate-slidein [--slidein-delay:800ms]">
             {t("main.name")}
           </h1>
-          <h1 className="h1-extrabold gap-x-1 opacity-0 animate-slidein [--slidein-delay:800ms]">
+          <h1 className="h1-extrabold gap-x-1 opacity-0 animate-slidein [--slidein-delay:1000ms]">
             {t("main.rolePrefix")}
             <TextSpin
               texts={[
@@ -76,7 +76,7 @@ const Home = () => {
             />
           </h1>
         </div>
-        <div className="flex space-x-3 opacity-0 animate-slidein [--slidein-delay:800ms]">
+        <div className="flex space-x-3 opacity-0 animate-slidein [--slidein-delay:1200ms]">
           <Html5 size={23} />
           <Css3 size={23} />
           <Python size={23} />
@@ -92,7 +92,7 @@ const Home = () => {
           <Unity size={23} />
         </div>
         <div className="flex flex-col justify-start items-start">
-          <div className="flex flex-wrap gap-4 opacity-0 animate-slidein [--slidein-delay:1200ms]">
+          <div className="flex flex-wrap gap-4 opacity-0 animate-slidein [--slidein-delay:1400ms]">
             <ProjectCard
               title={t("main.candlelightTitle")}
               description={t("main.candlelightDescription")}
