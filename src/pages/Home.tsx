@@ -5,14 +5,9 @@ import TextSpin from "@/components/TextSpin";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import {
-  UilLinkedinAlt,
-  UilGithubAlt,
-  UilJavaScript,
-  UilCss3Simple,
-  UilHtml5Alt,
-  UilReact,
-} from "@iconscout/react-unicons";
-import {
+  Html5,
+  Css3,
+  Javascript,
   Mysql,
   Typescript,
   Python,
@@ -22,7 +17,9 @@ import {
   Jquery,
   Csharp,
   Cplusplus,
+  ReactLogo,
 } from "styled-icons/simple-icons";
+import { Github, Linkedin } from "styled-icons/remix-line";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -38,15 +35,15 @@ const Home = () => {
           className="border-4 border-primary place-self-center opacity-0 rounded-full object-cover size-52 animate-slidein [--slidein-delay:200ms] "
           src="./assets/images/Profile-Picture.png"
         />
-        <div className="flex gap-2 opacity-0 place-self-center animate-slidein [--slidein-delay:300ms]">
+        <div className="flex gap-4 opacity-0 place-self-center animate-slidein [--slidein-delay:300ms]">
           <a
             href="https://github.com/PHNTMbandit"
             target="_blank">
             <Button
               variant="link"
               size="icon"
-              className="hover:border border-current">
-              <UilGithubAlt />
+              className="hover:outline outline-offset-2 size-8">
+              <Github />
             </Button>
           </a>
           <a
@@ -55,8 +52,8 @@ const Home = () => {
             <Button
               variant="link"
               size="icon"
-              className="hover:border border-current">
-              <UilLinkedinAlt />
+              className="hover:outline outline-offset-2 size-8">
+              <Linkedin />
             </Button>
           </a>
         </div>
@@ -80,12 +77,12 @@ const Home = () => {
           </h1>
         </div>
         <div className="flex space-x-3 opacity-0 animate-slidein [--slidein-delay:800ms]">
-          <UilHtml5Alt />
-          <UilCss3Simple />
+          <Html5 size={23} />
+          <Css3 size={23} />
           <Python size={23} />
-          <UilJavaScript />
+          <Javascript size={23} />
           <Typescript size={23} />
-          <UilReact />
+          <ReactLogo size={23} />
           <Jquery size={23} />
           <Java size={23} />
           <Php size={23} />

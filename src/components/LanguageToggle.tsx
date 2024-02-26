@@ -6,10 +6,9 @@ import {
   DropdownMenuRadioItem,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
-import { Globe } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
-import { UilGlobe } from "@iconscout/react-unicons";
+import { Globe } from "styled-icons/boxicons-regular";
 
 const locales: Record<string, { title: string }> = {
   en: { title: "English" },
@@ -27,7 +26,7 @@ const LanguageToggle = () => {
           <Button
             variant="outline"
             size="icon">
-            <UilGlobe />
+            <Globe className="h-[1.6rem] w-[1.6rem]" />
             <span className="sr-only">Toggle language</span>
           </Button>
         </DropdownMenuTrigger>

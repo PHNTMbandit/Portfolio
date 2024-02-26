@@ -1,5 +1,3 @@
-import { UilMoon } from "@iconscout/react-unicons";
-import { UilSun } from "@iconscout/react-unicons";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -8,6 +6,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useTheme } from "@/components/theme-provider";
+import { Moon, Sun } from "styled-icons/boxicons-regular";
 
 export function ModeToggle() {
   const { setTheme } = useTheme();
@@ -18,8 +17,8 @@ export function ModeToggle() {
         <Button
           variant="outline"
           size="icon">
-          <UilSun className="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <UilMoon className="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          <Sun className="h-[1.6rem] w-[1.6rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+          <Moon className="h-[1.6rem] w-[1.6rem] absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
