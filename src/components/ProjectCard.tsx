@@ -25,7 +25,7 @@ const ProjectCard = ({
   image,
 }: ProjectCardProps) => {
   return (
-    <Card className="overflow-hidden w-[89mm] h-[35mm] outline-inherit transition-all hover:outline hover:animate-grow">
+    <Card className="flex flex-col overflow-hidden w-[89mm] h-[35mm] outline-inherit transition-all hover:outline animate-grow">
       <CardHeader>
         <CardTitle className="text-primary hover:underline hover:cursor-pointer">
           <a
@@ -51,7 +51,7 @@ const ProjectCard = ({
       <img
         src={image}
         alt="project logo"
-        className="h-64 object-cover"></img>
+        className="h-full object-cover"></img>
     </Card>
   );
 };
