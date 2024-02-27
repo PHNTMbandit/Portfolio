@@ -52,11 +52,23 @@
 }
 
 .h1-extrabold {
-  @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+  @apply scroll-m-20 xl:text-4xl text-2xl font-extrabold tracking-tight;
 }
 
 .h2-bold {
-  @apply scroll-m-20 text-2xl font-bold tracking-tight lg:text-3xl;
+  @apply scroll-m-20 xl:text-3xl text-xl font-bold tracking-tight;
+}
+
+.h3-bold {
+  @apply scroll-m-20 xl:text-xl text-lg font-bold tracking-tight;
+}
+
+.h4 {
+  @apply scroll-m-20 font-light xl:text-base text-sm tracking-tight;
+}
+
+.p {
+  @apply scroll-m-20 xl:text-base text-sm tracking-tight;
 }
 
 @layer base {
