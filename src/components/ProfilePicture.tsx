@@ -8,7 +8,7 @@ const ProfilePicture = ({ className }: ProfilePictureProps) => {
   return (
     <img
       className={twMerge(
-        "border-4 border-primary place-self-center opacity-0 rounded-full object-cover size-52  ",
+        "shadow-lg shadow-primary border-4 border-primary place-self-center opacity-0 rounded-full object-cover size-52  ",
         className
       )}
       src="./assets/images/Profile-Picture.png"

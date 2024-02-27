@@ -17,7 +17,7 @@ const SocialMediaLink = ({ className, link, icon }: SocialMediaLinkProps) => {
           variant="link"
           size="icon"
           className={twMerge(
-            "hover:outline outline-offset-2 size-8",
+            "hover:shadow-lg hover:shadow-primary outline-offset-2 size-8",
             className
           )}>
           {icon}
