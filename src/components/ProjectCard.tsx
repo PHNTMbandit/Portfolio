@@ -31,12 +31,12 @@ const ProjectCard = ({
   return (
     <Card className="hover:shadow-lg hover:shadow-primary overflow-hidden w-[89mm] outline-primary transition-all hover:outline animate-grow">
       <CardHeader>
+        <SocialMediaLink
+          link={githubLink}
+          icon={<Github />}
+          className="fixed left-72"
+        />
         <CardTitle className="text-primary">
-          <SocialMediaLink
-            link={githubLink}
-            icon={<Github />}
-            className="absolute ml-52"
-          />
           <a
             className="hover:underline hover:cursor-pointer"
             target="_blank"
