@@ -34,7 +34,7 @@ const ProjectCard = ({
         <SocialMediaLink
           link={githubLink}
           icon={<Github />}
-          className="fixed left-72"
+          className="block left-72"
         />
         <CardTitle className="text-primary">
           <a
@@ -55,13 +55,13 @@ const ProjectCard = ({
           ))}
         </div>
       </CardHeader>
-      <CardContent className="xl:h-52 h-40 text-left">
+      <CardContent className="xl:h-52 h-36 text-left">
         <p>{content}</p>
       </CardContent>
       <img
         src={image}
         alt="project logo"
-        className="xl:h-56 h-72 w-full object-cover"></img>
+        className="xl:h-48 h-72 w-full object-cover"></img>
     </Card>
   );
 };
