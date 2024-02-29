@@ -116,48 +116,64 @@ const Home = () => {
           <Unity size={23} />
         </div>
 
-        <h2
-          id="projects"
-          className="h2-bold mt-36 opacity-0 animate-slidein [--slidein-delay:2400ms]">
-          {t("main.projectsHeader")}
-        </h2>
-        <Separator className="mt-10 opacity-0 animate-slidein [--slidein-delay:2400ms]" />
-        <div className="flex flex-wrap mt-10 gap-8 place-content-center opacity-0 animate-slidein [--slidein-delay:2400ms]">
-          <ProjectCard
-            title={t("main.candlelightTitle")}
-            description={t("main.candlelightDescription")}
-            tags={["Full-Stack", "API", "MERN"]}
-            content={t("main.candlelightContent")}
-            link=""
-            image="./assets/images/Candlelight-Logo.png"
+        <div className="flex flex-col mt-36 gap-10 justify-center items-center">
+          <img
+            id="projects"
+            src="./assets/images/Projects-Graphic.png"
+            alt="Projects Graphic"
+            className="w-72 opacity-0 animate-slidein [--slidein-delay:2400ms]"
           />
+          <h2 className="h2-bold opacity-0 animate-slidein [--slidein-delay:2400ms]">
+            {t("main.projectsHeader")}
+          </h2>
+          <Separator className="opacity-0 animate-slidein [--slidein-delay:2400ms]" />
+          <div className="flex flex-wrap gap-8 place-content-center opacity-0 animate-slidein [--slidein-delay:2400ms]">
+            <ProjectCard
+              title={t("main.candlelightTitle")}
+              description={t("main.candlelightDescription")}
+              tags={["Full-Stack", "API", "MERN"]}
+              content={t("main.candlelightContent")}
+              siteLink="https://candlelightdb.netlify.app"
+              githubLink="https://github.com/PHNTMbandit/Project-Candlelight"
+              image="./assets/images/Candlelight-Logo.png"
+            />
 
-          <ProjectCard
-            title={t("main.projectMVCTitle")}
-            description={t("main.projectMVCDescription")}
-            tags={["Unity", "3D", "C#"]}
-            content={t("main.projectMVCContent")}
-            link="https://phntmbandit.itch.io/mvc"
-            image="./assets/images/Project-MVC-Picture.png"
-          />
+            <ProjectCard
+              title={t("main.projectMVCTitle")}
+              description={t("main.projectMVCDescription")}
+              tags={["Unity", "3D", "C#"]}
+              content={t("main.projectMVCContent")}
+              siteLink="https://phntmbandit.itch.io/mvc"
+              githubLink="https://github.com/PHNTMbandit/Project-MVC"
+              image="./assets/images/Project-MVC-Picture.png"
+            />
 
-          <ProjectCard
-            title={t("main.projectLuminaTitle")}
-            description={t("main.projectLuminaDescription")}
-            tags={["Unity", "2D", "C#"]}
-            content={t("main.projectLuminaContent")}
-            link="https://phntmbandit.itch.io/project-lumina"
-            image="./assets/images/Project-Lumina-Picture.png"
-          />
+            <ProjectCard
+              title={t("main.projectLuminaTitle")}
+              description={t("main.projectLuminaDescription")}
+              tags={["Unity", "2D", "C#"]}
+              content={t("main.projectLuminaContent")}
+              siteLink="https://phntmbandit.itch.io/project-lumina"
+              githubLink="https://github.com/PHNTMbandit/Project-Lumina"
+              image="./assets/images/Project-Lumina-Picture.png"
+            />
+          </div>
         </div>
-        <h2
-          id="about"
-          className="h2-bold mt-36 opacity-0 animate-slidein [--slidein-delay:2400ms]">
-          {t("main.aboutHeader")}
-        </h2>
-        <Separator className="mt-10 opacity-0 animate-slidein [--slidein-delay:2400ms]" />
-        <div className="p mt-10 text-left opacity-0 animate-slidein [--slidein-delay:2400ms]">
-          {t("main.about")}
+
+        <div className="flex flex-col mt-36 gap-10 justify-center items-center">
+          <img
+            id="about"
+            src="./assets/images/About-Graphic.png"
+            alt="Projects Graphic"
+            className="w-72 opacity-0 animate-slidein [--slidein-delay:2400ms]"
+          />
+          <h2 className="h2-bold opacity-0 animate-slidein [--slidein-delay:2400ms]">
+            {t("main.aboutHeader")}
+          </h2>
+          <Separator className="opacity-0 animate-slidein [--slidein-delay:2400ms]" />
+          <div className="p text-left opacity-0 animate-slidein [--slidein-delay:2400ms]">
+            <div className="w-72">{t("main.about")}</div>
+          </div>
         </div>
       </div>
       <Button
