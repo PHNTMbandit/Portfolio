@@ -1,3 +1,5 @@
+import SocialMediaLink from "./SocialMediaLink";
+import { Github } from "@styled-icons/boxicons-logos/Github";
 import {
   Card,
   CardHeader,
@@ -12,7 +14,8 @@ interface ProjectCardProps {
   description: string;
   tags: string[];
   content: string;
-  link: string;
+  siteLink: string;
+  githubLink: string;
   image: string;
 }
 
@@ -21,16 +24,23 @@ const ProjectCard = ({
   description,
   tags,
   content,
-  link,
+  siteLink,
+  githubLink,
   image,
 }: ProjectCardProps) => {
   return (
-    <Card className="hover:shadow-lg hover:shadow-primary overflow-hidden w-[89mm] h-[35mm] outline-primary transition-all hover:outline animate-grow">
+    <Card className="hover:shadow-lg hover:shadow-primary overflow-hidden w-[89mm] outline-primary transition-all hover:outline animate-grow">
       <CardHeader>
-        <CardTitle className="text-primary hover:underline hover:cursor-pointer">
+        <CardTitle className="text-primary">
+          <SocialMediaLink
+            link={githubLink}
+            icon={<Github />}
+            className="absolute ml-52"
+          />
           <a
+            className="hover:underline hover:cursor-pointer"
             target="_blank"
-            href={link}>
+            href={siteLink}>
             {title}
           </a>
         </CardTitle>
@@ -45,13 +55,13 @@ const ProjectCard = ({
           ))}
         </div>
       </CardHeader>
-      <CardContent className="h-[200px] text-left">
+      <CardContent className="xl:h-52 h-40 text-left">
         <p>{content}</p>
       </CardContent>
       <img
         src={image}
         alt="project logo"
-        className="h-64 object-cover"></img>
+        className="xl:h-56 h-72 w-full object-cover"></img>
     </Card>
   );
 };

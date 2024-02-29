@@ -133,7 +133,8 @@ const Home = () => {
               description={t("main.candlelightDescription")}
               tags={["Full-Stack", "API", "MERN"]}
               content={t("main.candlelightContent")}
-              link=""
+              siteLink="https://candlelightdb.netlify.app"
+              githubLink="https://github.com/PHNTMbandit/Project-Candlelight"
               image="./assets/images/Candlelight-Logo.png"
             />
 
@@ -142,7 +143,8 @@ const Home = () => {
               description={t("main.projectMVCDescription")}
               tags={["Unity", "3D", "C#"]}
               content={t("main.projectMVCContent")}
-              link="https://phntmbandit.itch.io/mvc"
+              siteLink="https://phntmbandit.itch.io/mvc"
+              githubLink="https://github.com/PHNTMbandit/Project-MVC"
               image="./assets/images/Project-MVC-Picture.png"
             />
 
@@ -151,7 +153,8 @@ const Home = () => {
               description={t("main.projectLuminaDescription")}
               tags={["Unity", "2D", "C#"]}
               content={t("main.projectLuminaContent")}
-              link="https://phntmbandit.itch.io/project-lumina"
+              siteLink="https://phntmbandit.itch.io/project-lumina"
+              githubLink="https://github.com/PHNTMbandit/Project-Lumina"
               image="./assets/images/Project-Lumina-Picture.png"
             />
           </div>
