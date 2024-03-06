@@ -95,6 +95,8 @@ const Home = () => {
                 t("main.role2"),
                 t("main.role3"),
                 t("main.role4"),
+                t("main.role5"),
+                t("main.role6"),
               ]}
             />
           </h1>
@@ -172,7 +174,7 @@ const Home = () => {
           </h2>
           <Separator className="opacity-0 animate-slidein [--slidein-delay:2400ms]" />
           <div className="p text-left opacity-0 animate-slidein [--slidein-delay:2400ms]">
-            <div className="w-72">{t("main.about")}</div>
+            <div className="w-[650px]">{t("main.about")}</div>
           </div>
         </div>
       </div>
