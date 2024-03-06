@@ -135,7 +135,7 @@ const Home = () => {
               description={t("main.candlelightDescription")}
               tags={["Full-Stack", "API", "MERN"]}
               content={t("main.candlelightContent")}
-              siteLink="https://candlelightdb.netlify.app/signup"
+              siteLink="https://candlelightdb.vercel.app/signup"
               githubLink="https://github.com/PHNTMbandit/Project-Candlelight"
               image="./assets/images/Candlelight-Logo.png"
             />
