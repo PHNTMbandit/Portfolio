@@ -67,6 +67,10 @@
   @apply scroll-m-20 font-light xl:text-base text-sm tracking-tight;
 }
 
+.h4-space {
+  @apply scroll-m-20 xl:text-xl text-lg font-bold tracking-wide;
+}
+
 .p {
   @apply scroll-m-20 xl:text-base text-sm tracking-tight;
 }

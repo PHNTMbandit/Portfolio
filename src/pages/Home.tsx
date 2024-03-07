@@ -24,6 +24,8 @@ import SocialMediaLink from "@/components/SocialMediaLink";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { ArrowBarUp } from "@styled-icons/bootstrap/ArrowBarUp";
+import { HomeAlt } from "styled-icons/boxicons-regular";
+import { PinOutline } from "@styled-icons/evaicons-outline/PinOutline";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -44,7 +46,6 @@ const Home = () => {
         <ModeToggle />
         <LanguageToggle />
       </div>
-
       <>
         <Button
           variant={"link"}
@@ -65,10 +66,8 @@ const Home = () => {
           {t("main.aboutHeader")}
         </Button>
       </>
-
       <div className="flex flex-col mt-20 mb-20">
         <ProfilePicture className="mt-6 animate-slidein [--slidein-delay:200ms]" />
-
         <div className="flex gap-4 mt-10 opacity-0 justify-center animate-slidein [--slidein-delay:400ms]">
           <SocialMediaLink
             link="https://github.com/PHNTMbandit"
@@ -79,7 +78,6 @@ const Home = () => {
             icon={<Linkedin />}
           />
         </div>
-
         <div className="flex flex-col mt-14 items-center space-y-3">
           <h1 className="h1-extrabold opacity-0 animate-slidein [--slidein-delay:600ms]">
             {t("main.greeting")}
@@ -101,7 +99,6 @@ const Home = () => {
             />
           </h1>
         </div>
-
         <div className="flex flex-wrap mt-14 gap-5 justify-center opacity-0 animate-slidein [--slidein-delay:1200ms]">
           <Html5 size={23} />
           <Css3 size={23} />
@@ -117,7 +114,6 @@ const Home = () => {
           <Cplusplus size={23} />
           <Unity size={23} />
         </div>
-
         <div className="flex flex-col mt-36 gap-10 justify-center items-center">
           <img
             id="projects"
@@ -161,7 +157,6 @@ const Home = () => {
             />
           </div>
         </div>
-
         <div className="flex flex-col mt-36 gap-10 justify-center items-center">
           <img
             id="about"
@@ -173,8 +168,31 @@ const Home = () => {
             {t("main.aboutHeader")}
           </h2>
           <Separator className="opacity-0 animate-slidein [--slidein-delay:2400ms]" />
-          <div className="p text-left opacity-0 animate-slidein [--slidein-delay:2400ms]">
-            <div className="w-[650px]">{t("main.about")}</div>
+          <div className="xl:flex gap-10 opacity-0 animate-slidein [--slidein-delay:2400ms]">
+            <img
+              src="./assets/images/About-Picture.jpg"
+              alt="Picture"
+              className="xl:block hidden xl:w-80 w-80 object-cover border-2 border-primary rounded-lg"
+            />
+            <div className="flex flex-col items-center xl:items-start justify-between">
+              <h4 className="h4-space text-left">
+                <HomeAlt
+                  size={40}
+                  className="mr-3 mb-2"
+                />
+                {t("main.hometown")}
+              </h4>
+              <h4 className="h4-space text-left mb-3">
+                <PinOutline
+                  size={40}
+                  className="mr-3 mb-2"
+                />
+                {t("main.location")}
+              </h4>
+              <div className="p text-left xl:w-[650px] w-[300px] whitespace-pre-wrap">
+                {t("main.about")}
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -184,6 +202,15 @@ const Home = () => {
         asChild>
         <ArrowBarUp className="hover:cursor-pointer" />
       </Button>
+      <p className="mt-16 text-foreground">
+        Graphics provided by{" "}
+        <a
+          href="https://www.vecteezy.com"
+          target="_blank"
+          className="underline text-primary cursor-pointer">
+          Vecteezy.com
+        </a>
+      </p>
     </>
   );
 };
