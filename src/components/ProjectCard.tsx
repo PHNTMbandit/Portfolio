@@ -61,7 +61,7 @@ const ProjectCard = ({
       <img
         src={image}
         alt="project logo"
-        className="xl:h-48 h-72 w-full object-cover"></img>
+        className="xl:h-48 h-72 w-full object-left object-cover"></img>
     </Card>
   );
 };

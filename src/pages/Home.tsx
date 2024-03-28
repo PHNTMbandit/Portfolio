@@ -11,12 +11,13 @@ import {
   Typescript,
   Python,
   Java,
-  Php,
+  Django,
   Unity,
   Jquery,
   Csharp,
   Cplusplus,
   ReactLogo,
+  Nextdotjs,
 } from "styled-icons/simple-icons";
 import { Github, Linkedin } from "styled-icons/remix-line";
 import ProfilePicture from "@/components/ProfilePicture";
@@ -103,12 +104,13 @@ const Home = () => {
           <Html5 size={23} />
           <Css3 size={23} />
           <Python size={23} />
+          <Django size={23} />
           <Javascript size={23} />
           <Typescript size={23} />
           <ReactLogo size={23} />
+          <Nextdotjs size={23} />
           <Jquery size={23} />
           <Java size={23} />
-          <Php size={23} />
           <Mysql size={23} />
           <Csharp size={23} />
           <Cplusplus size={23} />
@@ -134,6 +136,15 @@ const Home = () => {
               siteLink="https://candlelightdb.vercel.app/signup"
               githubLink="https://github.com/PHNTMbandit/Project-Candlelight"
               image="./assets/images/Candlelight-Logo.png"
+            />
+            <ProjectCard
+              title={t("main.weatherTitle")}
+              description={t("main.weatherDescription")}
+              tags={["NextJS", "API"]}
+              content={t("main.weatherContent")}
+              siteLink="https://project-zeus-psi.vercel.app/"
+              githubLink="https://github.com/PHNTMbandit/project-zeus"
+              image="./assets/images/Project-Zeus-Image.png"
             />
 
             <ProjectCard
