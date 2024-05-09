@@ -129,6 +129,15 @@ const Home = () => {
           <Separator className="opacity-0 animate-slidein [--slidein-delay:2400ms]" />
           <div className="flex flex-wrap gap-8 place-content-center opacity-0 animate-slidein [--slidein-delay:2400ms]">
             <ProjectCard
+              title={t("main.projectMuseTitle")}
+              description={t("main.projectMuseDescription")}
+              tags={["SQL", "NextJS", "User Auth"]}
+              content={t("main.projectMuseContent")}
+              siteLink="https://project-muse.vercel.app/games"
+              githubLink="https://github.com/PHNTMbandit/project-muse"
+              image="./assets/images/Project-Muse-Picture.png"
+            />
+            <ProjectCard
               title={t("main.candlelightTitle")}
               description={t("main.candlelightDescription")}
               tags={["Full-Stack", "API", "MERN"]}
